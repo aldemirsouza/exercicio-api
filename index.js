@@ -32,22 +32,6 @@ function printProducts({item}){
     listTotal.innerHTML = `<p>Total do pedido: <span> ${total}</span></p>`;
 }
 
-/*
-function limitName({item}, max){
-   const newName = item.reduce((acc, letter, index) =>{
-       if(index >= max) return acc;
-       if(index >= max) return acc + '...';
-        return acc + letter;
-   }, '');
-
-   return newName; 
-}
-
-
-const limitedName = limitName(listProducts, 20);
-console.log(limitedName);*/
-
-
 const config ={
     method: 'GET',
     url: 'products.json',
